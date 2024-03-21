@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <style>
+      .main {
+        margin-left: 700px;
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="main">
+      <h1 style="margin-left: 140px">SIGN IN</h1>
+      <div class="container">
+        <input
+          type="email"
+          placeholder="Email Address*"
+          style="height: 50px; width: 410px"
+          id="email"
+        />
+        <br /><br />
+        <input
+          type="password"
+          placeholder="Password*"
+          style="height: 50px; width: 410px"
+          id="password"
+        />
+        <br /><br />
+        <input type="checkbox" value="none" /> Remember Me <br /><br />
+        <button
+          style="
+            background-color: cornflowerblue;
+            color: white;
+            height: 50px;
+            width: 420px;
+            border-radius: 10px;
+          "
+          onclick="signIn(event)"
+        >
+          SIGN IN
+        </button>
+        <br /><br />
+        <a href="" style="color: blue">Forgot password?</a>
+        <a href="./signup.html" style="color: blue; margin-left: 90px"
+          >Don't have any account? Sign up
+        </a>
+        <br /><br />
+        <p style="color: gray; margin-left: 100px">
+          Copyright © Your Website 2024.
+        </p>
+      </div>
+    </form>
+    <script src="../js/signin.js"></script>
+  </body>
+</html>

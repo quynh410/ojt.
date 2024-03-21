@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main">
+      <div class="wrapper">
+        <a href="https://shopee.vn                                           ">
+          <img
+            src="../asset/images/shopee-logo.png"
+            alt=""
+            style="height: 70px"
+          />
+        </a>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Tìm kiếm"
+          style="width: 700px; height: 40px"
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="card-shopping">
+        <a href="./cart.html">
+          <i
+            class="fa-solid fa-cart-shopping"
+            style="
+              margin-left: 1200px;
+              position: absolute;
+              display: flex;
+              margin-top: -30px;
+              font-size: 20px;
+            "
+            ></i>
+        </a>
+      </div>
+      <div
+        class="actions"
+        style="
+          position: absolute;
+          display: flex;
+          margin-top: -30px;
+          margin-left: 1400px;
+          gap: 10px;
+          height: 30px;
+        "
+      >
+        <button><a href="./signin.html">Đăng nhập</a></button>
+        <button><a href="./signup.html">Đăng kí</a></button>
+      </div>
+    </header>
+    <!-- navbar -->
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-922d768eceff11390387dd70a9d3d635_xxhdpi"
+            class="d-block w-100"
+            alt="..."
+            style="
+              border-top-left-radius: 150px;
+              border-bottom-right-radius: 150px;
+            "
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-23b5ccce43306d6c9aef6e56bf5f3bb6_xxhdpi"
+            class="d-block w-100"
+            alt="..."
+            style="
+              border-top-left-radius: 150px;
+              border-bottom-right-radius: 150px;
+            "
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-d10a05830875537f5aa82b2a2e0dd9a3_xxhdpi"
+            class="d-block w-100"
+            alt="..."
+            style="
+              border-top-left-radius: 150px;
+              border-bottom-right-radius: 150px;
+            "
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 style="margin-left: 750px">GỢI Ý SẢN PHẨM</h1>
+
+    <div class="wp-detail" id="product">
+      <div class="include">
+        <!-- <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lqsv2pfjbrq084"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi phong
+            cách dễ thương mẫu mới</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">32.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 3,2k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lk0ifurm8s1ub7"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >Vợt cầu lông Boshika (02 chiếc) tặng kèm 3 quả cầu lông chất lượng
+            cao , bảo hành 12 tháng</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">70.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 15k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/75881a6d0b5613a27d5d16963674f37a"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >Kính Mát Chống Tia Bức Xạ Ánh Sáng Xanh Cho Nữ</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">18.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 2,7k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbkx-lo6mqbgxqfm2f6"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >【Chính Hãng】Son kem bóng/Son bóng SHAQINUO Siêu lì căng mọng môi
+            không lem
+          </span>
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">24,800đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 1,7k</span>
+        </div>
+      </div>
+
+      <br /><br /><br />
+      <div class="include">
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >Balo BOO Unisex Large Logo Phối Túi Plastic</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">100,000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 8k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo91wvlvo22zf6"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >🔥 Giá Sốc 🔥 Áo khoá nỉ mũ hai lớp LASA SUSO nỉ lót bông form
+            rộng</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">59.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 1,5k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lp0k9a622ul86c"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >🔥Bộ 4 Cây Bút Ký Hiệu Hình Gấu Trúc Cho Học Sinh🔥</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">12.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 5,2k</span>
+        </div>
+
+        <div class="item">
+          <a href=""
+            ><img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbn1-lotvbglv7g8u4a"
+              alt=""
+          /></a>
+          <br />
+          <span style="color: white"
+            >Panda~búp bê cotton, 20cm, Đồ chơi sang trọng dễ thương, Downsato,
+            phong cách đa dạng, Búp bê</span
+          >
+          <br /><br />
+          <br />
+          <span style="color: #ee4d2d">84.000đ</span>
+          <span style="margin-left: 205px; color: grey">Đã bán 418</span>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="box">
+        <div class="logo">
+          <img src="../item/logo-sm.png" alt="" width="50px" />
+        </div>
+        <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        <div class="arr">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-google-plus"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+          <div class="item">
+            <a href="">Trang chủ</a>
+          </div>
+          <div class="item">
+            <a href="">Sản phẩm</a>
+          </div>
+          <div class="item">
+            <a href="">Blog</a>
+          </div>
+          <div class="item">
+            <a href="">Liên hệ</a>
+          </div>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Liên Hệ</h3>
+        <div action="">
+          <input type="text" placeholder="Địa chỉ email" />
+          <button>Nhận tin</button>
+        </div>
+      </div>
+    </div>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

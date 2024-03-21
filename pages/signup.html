@@ -1,0 +1,102 @@
+<!-- 
+        Trang đăng kí
+     -->
+<!-- Câú trúc thư mục dự án
+        1. file gốc(root) là index.html
+        2. folder : page : chứa các trang của dự án
+        3. folder : asset : chứa folder images, video
+        4. js     : chứa các file javascript
+        5. style  : chứa các file css
+        6. utils  : chứa các tài nguyễn ứng dụng chung
+        =============================================
+        Cấu trúc 1 trang web
+        1. Header : Phần đầu trang 
+            + chứa logo , thanh tìm kiếm, thông tin của user ( nếu đăng nhập ), hiển thị đăng kí , đăng nhập khi chưa đăng nhập 
+        2. Main : Phần thân ( phần chínnh )
+            + Chứa danh sách sản phẩm bán
+                + sản phẩm bán chạy 
+                + danh sách tất cả sản phẩm để bán
+                + Phân loại sản phẩm 
+        3. Footer : Phần chân trang
+            + Thông tin về cửa hàng, liên hệ , sdt, địa chỉ ,........
+             re
+        =============================================
+
+     -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <style>
+    .main {
+      margin-left: 700px;
+      margin-top: 200px;
+    }
+  </style>
+  <body>
+    <form id="signup">
+      <div class="main">
+        <h1 style="margin-left: 140px">SIGN UP</h1>
+        <div class="container">
+          <input
+            type="name"
+            placeholder="First Name*"
+            style="height: 50px; width: 200px"
+            id="first-name"
+          />
+          <input
+            type="name"
+            placeholder="last Name*"
+            style="height: 50px; width: 200px"
+            id="last-name"
+          />
+          <br /><br />
+          <input
+            type="email"
+            placeholder="Email Address*"
+            style="height: 50px; width: 410px"
+            id="email"
+          />
+          <br /><br />
+          <input
+            type="password"
+            placeholder="Password*"
+            style="height: 50px; width: 410px"
+            id="password"
+            maxlength="6"
+          />
+          <br /><br />
+          <input type="checkbox" value="none" /> I want to recevice inspiration
+          marketing <br />
+          promotions and updates via email
+          <br /><br />
+          <button
+            style="
+              background-color: cornflowerblue;
+              color: white;
+              height: 50px;
+              width: 420px;
+              border-radius: 10px;
+            "
+            type="submit"
+            onclick="signUp(event)"
+          >
+            SIGN UP
+          </button>
+          <br /><br />
+          <a href="./signin.html" style="color: blue; margin-left: 200px"
+            >Already have an account ? Sign in
+          </a>
+          <br /><br />
+          <p style="color: gray; margin-left: 110px">
+            Copyright © Your Website 2024.
+          </p>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="../js/signup.js"></script>
+</html>
