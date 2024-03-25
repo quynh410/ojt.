@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
     <style>
       table {
@@ -19,175 +21,180 @@
       tr:hover {
         background-color: #f5f5f5;
       }
+      .alla {
+        display: inline-flex;
+      }
     </style>
   </head>
   <body>
-    <h2>Shopping Cart</h2>
-    <table border="1" id="cartBody">
-      <tr>
-        <th>STT</th>
-        <th>Ảnh</th>
-        <th>Tên sản phẩm</th>
-        <th>Số lượng</th>
-        <th>Giá</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lqsv2pfjbrq084"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>
-          🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi phong
-          cách dễ thương mẫu mới
-        </td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>32.000đ</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lk0ifurm8s1ub7"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>
-          Vợt cầu lông Boshika (02 chiếc) tặng kèm 3 quả cầu lông chất lượng cao
-          , bảo hành 12 tháng
-        </td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>70.000đ</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/75881a6d0b5613a27d5d16963674f37a"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>Kính Mát Chống Tia Bức Xạ Ánh Sáng Xanh Cho Nữ</td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>18.000đ</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbkx-lo6mqbgxqfm2f6"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>
-          【Chính Hãng】Son kem bóng/Son bóng SHAQINUO Siêu lì căng mọng môi
-          không lem
-        </td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>24.800đ</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>Balo BOO Unisex Large Logo Phối Túi Plastic</td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>100.000đ</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo91wvlvo22zf6"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>
-          🔥 Giá Sốc 🔥 Áo khoá nỉ mũ hai lớp LASA SUSO nỉ lót bông form rộng
-        </td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>59.000đ</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lp0k9a622ul86c"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>🔥Bộ 4 Cây Bút Ký Hiệu Hình Gấu Trúc Cho Học Sinh🔥</td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>12.000đ</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>
-          <img
-            src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbn1-lotvbglv7g8u4a"
-            alt=""
-            style="width: 100px"
-          />
-        </td>
-        <td>
-          Panda~búp bê cotton, 20cm, Đồ chơi sang trọng dễ thương, Downsato,
-          phong cách đa dạng, Búp bê
-        </td>
-        <td>
-          <button onclick="increase()">+</button>
-          <input type="text" value="1" style="width: 20px" />
-          <button onclick="decrease()">-</button>
-        </td>
-        <td>84.000đ</td>
-        <tfoot>
-          <td colspan="3" align="right">Total:</td>
-          <td></td>
-          <td id="total">$1</td>
-        </tfoot>
+    <div>
+      <h2>Shopping Cart</h2>
+      <table border="1" id="cartBody">
+        <tr>
+          <th>STT</th>
+          <th>Ảnh</th>
+          <th>Tên sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lqsv2pfjbrq084"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>
+            🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi phong
+            cách dễ thương mẫu mới
+          </td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>32.000đ</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lk0ifurm8s1ub7"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>
+            Vợt cầu lông Boshika (02 chiếc) tặng kèm 3 quả cầu lông chất lượng
+            cao , bảo hành 12 tháng
+          </td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>70.000đ</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/75881a6d0b5613a27d5d16963674f37a"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>Kính Mát Chống Tia Bức Xạ Ánh Sáng Xanh Cho Nữ</td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>18.000đ</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbkx-lo6mqbgxqfm2f6"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>
+            【Chính Hãng】Son kem bóng/Son bóng SHAQINUO Siêu lì căng mọng môi
+            không lem
+          </td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>24.800đ</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>Balo BOO Unisex Large Logo Phối Túi Plastic</td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>100.000đ</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo91wvlvo22zf6"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>
+            🔥 Giá Sốc 🔥 Áo khoá nỉ mũ hai lớp LASA SUSO nỉ lót bông form rộng
+          </td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>59.000đ</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lp0k9a622ul86c"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>🔥Bộ 4 Cây Bút Ký Hiệu Hình Gấu Trúc Cho Học Sinh🔥</td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>12.000đ</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbn1-lotvbglv7g8u4a"
+              alt=""
+              style="width: 100px"
+            />
+          </td>
+          <td>
+            Panda~búp bê cotton, 20cm, Đồ chơi sang trọng dễ thương, Downsato,
+            phong cách đa dạng, Búp bê
+          </td>
+          <td>
+            <button onclick="increase()">+</button>
+            <input type="text" value="1" style="width: 20px" />
+            <button onclick="decrease()">-</button>
+          </td>
+          <td>84.000đ</td>
+          <tfoot>
+            <td colspan="3" align="right">Total:</td>
+            <td></td>
+            <td id="total">$1</td>
+          </tfoot>
 
-        <button style="margin-left: 1765px">Thanh toán</button>
-      </tr>
-    </table>
+          <button style="margin-left: 1765px">Thanh toán</button>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

@@ -57,22 +57,34 @@
               margin-top: -30px;
               font-size: 20px;
             "
-            ></i>
+          ></i>
         </a>
       </div>
+
       <div
         class="actions"
         style="
           position: absolute;
           display: flex;
           margin-top: -30px;
-          margin-left: 1400px;
+          margin-left: 1277px;
           gap: 10px;
           height: 30px;
         "
       >
-        <button><a href="./signin.html">Đăng nhập</a></button>
-        <button><a href="./signup.html">Đăng kí</a></button>
+        <div
+          style="padding-right: 150px; margin-left: -40px"
+          class="itemInCart"
+        ></div>
+        <button id="login"><a href="./signin.html">Đăng nhập</a></button>
+        <button id="register"><a href="./signup.html">Đăng kí</a></button>
+        <span id="user">User</span>
+        <a href="./admin.user.html">
+          <i
+            class="fa-solid fa-gear"
+            style="margin-left: 400px; font-size: 20px"
+          ></i>
+        </a>
       </div>
     </header>
     <!-- navbar -->
@@ -313,6 +325,7 @@
         </div>
       </div>
     </div>
+    <div id="user-welcome"></div>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/index.js"></script>
   </body>

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ask{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+}
+.all-detail{
+    background-color: bisque;
+    width: 1200px;
+    height: 50pc;
+    margin: auto;
+    display: flex;
+}
+.inf{
+    margin-left: 733px;
+    margin-top: -489px;
+}
+span{
+    font-size: 25px;
+}
+
+
+
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    width: 635px;
+    height: 50px;
+    background-color: lavender;
+}
+.voucher{
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+.aqua{
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+}
+.move{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.freeship{
+    display: flex;
+    margin-left: 115px;
+    gap: 25px;
+    margin-top: 20px;
+}
+.oto{
+    display: flex;
+    margin-left: 120px;
+    gap: 35px;
+    margin-top: 20px;
+}
+.vnd{
+    display: flex;
+    margin-left: 170px;
+    gap: 35px;
+    margin-top: 20px;
+}
+.buyNow{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: 1px;
+    margin-top: 20px;
+}
+.genuine{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 60px;
+}
