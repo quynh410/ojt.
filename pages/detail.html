@@ -1,23 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chi tiet</title>
-    <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/detail.css" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+<link rel="stylesheet" href="../style/detail.css">  </head>
   <body>
+
     <header class="main">
       <div class="wrapper">
-        <a href="https://shopee.vn                                           ">
+        <a href="./index.html">
           <img
             src="../asset/images/shopee-logo.png"
             alt=""
@@ -72,127 +80,140 @@
         <span id="user">User</span>
       </div>
     </header>
-<!-- ------------------------------------------------- -->
-
-
-    <div class="ask">
-        <i class="fa-solid fa-house" style="color: white"></i>
-        <a href=""> trang chủ / </a>
-        <a href="">liên hệ</a>
-      </div>
-      <div class="all-detail">
-        <div>
-          <img
-            src="https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lqsv2pfjbrq084"
-            alt=""
-            style="width: 500px; margin-left: 70px; margin-top: 40px"
-          />
+    <div>
+      <a href="./index.html"><i class="fa-solid fa-house"></i>Trang Chủ/</a>
+      <a href="">Thời Trang/</a>
+      <a href="">Giới Thiệu</a>
+       
+    </div>
+    <div class="include">
+      <div class="box">
+        <img
+          id="product-image"
+          class="image"
+          src="https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lqsv2pfjbrq084"
+          alt=""
+          width="400px"
+          height="400px"
+        />
+        <div class="share">
+          <div class="iconInternet">
+            <p style="white-space: nowrap">Chia sẻ :</p>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="heart">
+            <i id="heart" class="fa-solid fa-heart"></i>
+            <i style="white-space: nowrap">Đã thích (18,4k)</i>
+          </div>
         </div>
-        <!-- <div class="inf">
-          <div>
-            <span style="color: white"
-              >🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi
-              phong cách dễ thương mẫu mới</span
-            >
-          </div>
-          <br /><br />
-          <br />
-          <div>
-            <span
-              ><a href="#" style="color: #ee4d2d">4,9</a
-              ><i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              <i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              <i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              <i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              <i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              <i class="fa-solid fa-star" style="color: #ee4d2d"></i>
-              670 đánh giá
-            </span>
-          </div>
-        </div> -->
+      </div>
+      <div class="write">
+        <h3 class="title" id="name-product">🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi phong
+          cách dễ thương mẫu mới</h3>
+        <div class="evaluate">
+          <p style="color: red">
+            4.9
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+          <p>
+            <p id="stock">13,5k</p>
+            <i>Còn Hàng</i>
+          </p>
+          <p>
+            <p id="sold">15k</p> 
+            <i>Đã bán</i>
+          </p>
+          
+        </div>
         <div class="price">
-            <!-- <del style="color: cadetblue">₫227.000</del> -->
-            <h1 style="color: red" id="price">₫184.000</h1>
-            <button style="background-color: red; color: white; border: 1px">
-              19% GIẢM
-            </button>
-          </div>
-          <div class="voucher">
-            <p style="color: cadetblue">Mã Giảm Giá Của Shop</p>
-            <p><i class="fa-solid fa-ticket"></i> 6 % Giảm</p>
-            <p><i class="fa-solid fa-ticket"></i> 7 % Giảm</p>
-          </div>
-          <div class="aqua">
-            <p style="color: cadetblue">Deal Sốc</p>
-            <button
-              style="background-color: burlywood; color: white; border: 1px"
+          <!-- <del style="color: cadetblue">₫227.000</del> -->
+          <h1 style="color: red" id="price">32.000₫</h1>
+          <button style="background-color: red; color: white; border: 1px">
+            19% GIẢM
+          </button>
+        </div>
+        <div class="voucher">
+          <p style="color: cadetblue">Mã Giảm Giá Của Shop</p>
+          <p><i class="fa-solid fa-ticket"></i> 6 % Giảm</p>
+          <p><i class="fa-solid fa-ticket"></i> 7 % Giảm</p>
+        </div>
+        <div class="aqua">
+          <p style="color: cadetblue">Deal Sốc</p>
+          <button
+            style="background-color: burlywood; color: white; border: 1px"
+          >
+            Mua để nhận quà
+          </button>
+        </div>
+        <div class="move">
+          <p style="color: cadetblue">Vận chuyển</p>
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/3e0adc366a3964f4fb59.svg"
+            alt=""
+          />
+          <p style="color: cadetblue">
+            Xử lí đơn hàng bởi Shopee
+            <span style="font-size: 20px" class="material-symbols-outlined"
+              >help</span
             >
-              Mua để nhận quà
-            </button>
-          </div>
-          <div class="move">
-            <p style="color: cadetblue">Vận chuyển</p>
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/3e0adc366a3964f4fb59.svg"
-              alt=""
-            />
-            <p style="color: cadetblue">
-              Xử lí đơn hàng bởi Shopee
-              <span style="font-size: 20px" class="material-symbols-outlined"
-                >help</span
-              >
-            </p>
-          </div>
-          <div class="freeship">
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/d9e992985b18d96aab90.png"
-              alt=""
-              width="30px"
-            />
-            <p style="color: cadetblue">Miễn phí vận chuyển</p>
-          </div>
-          <div class="oto">
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/baa823ac1c58392c2031.svg"
-              alt=""
-            />
-            <p style="color: cadetblue">Vận chuyển tới</p>
-            <select name="" id="">
-              <option value="">Huyện Ba Vì</option>
-            </select>
-          </div>
-          <div class="vnd">
-            <p style="color: cadetblue">Phí Vận Chuyển</p>
-            <select name="" id="">
-              <option value="">₫0</option>
-            </select>
-          </div>
-          <button class="buyNow">Mua Ngay</button>
-          <div class="genuine">
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/2bcf834c40468ebcb90b.svg"
-              alt=""
-            />
-            <p>Đổi ý miễn phí 15 ngày</p>
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/511aca04cc3ba9234ab0.png"
-              alt=""
-              width="30px"
-              height="30px"
-            />
-            <p>Hàng chính hãng 100%</p>
-            <img
-              src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/16ead7e0a68c3cff9f32.png"
-              alt=""
-              width="30px"
-              height="30px"
-            />
-            <p>Miễn phí vận chuyển</p>
-          </div>
+          </p>
+        </div>
+        <div class="freeship">
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/d9e992985b18d96aab90.png"
+            alt=""
+            width="30px"
+          />
+          <p style="color: cadetblue">Miễn phí vận chuyển</p>
+        </div>
+        <div class="oto">
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/baa823ac1c58392c2031.svg"
+            alt=""
+          />
+          <p style="color: cadetblue">Vận chuyển tới</p>
+          <select name="" id="">
+            <option value="">Phường Cẩm bình</option>
+          </select>
+        </div>
+        <div class="vnd">
+          <p style="color: cadetblue">Phí Vận Chuyển</p>
+          <select name="" id="">
+            <option value="">₫0</option>
+          </select>
+        </div>
+        <button class="buyNow" onclick="purchase()">Mua Ngay</button>
+        <div class="genuine">
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/2bcf834c40468ebcb90b.svg"
+            alt=""
+          />
+          <p>Đổi ý miễn phí 15 ngày</p>
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/511aca04cc3ba9234ab0.png"
+            alt=""
+            width="30px"
+            height="30px"
+          />
+          <p>Hàng chính hãng 100%</p>
+          <img
+            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/16ead7e0a68c3cff9f32.png"
+            alt=""
+            width="30px"
+            height="30px"
+          />
+          <p>Miễn phí vận chuyển</p>
         </div>
       </div>
     </div>
-
-    <script src="../js/index.js"></script>
+    <script src="../js/detail.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
   </body>
 </html>

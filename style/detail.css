@@ -1,25 +1,16 @@
+
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background-color: rgb(37, 35, 35)
 }
 
-.ask{
-    font-size: 20px;
-    display: flex;
-    gap: 20px;
-    text-transform: capitalize;
-}
-.all-detail{
-    background-color: bisque;
-    width: 1200px;
-    height: 50pc;
-    margin: auto;
-    display: flex;
-}
 .inf{
     margin-left: 733px;
     margin-top: -489px;
@@ -28,9 +19,135 @@ span{
     font-size: 25px;
 }
 
+    .main {
+    width: 100%;
+    height: 100px;
+    }
+    .wrapper {
+    width: 100%;
+    height: 100px;
+    background-color: #ee4d2d;
+    }
+    .search {
+    margin-left: 400px;
+    margin-top: -70px;
+    }
+    .btn {
+    width: 50px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    background-color: #d38879;
+    }
+ 
 
 
-
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+hr{
+    margin: 5% 0 5% 0;
+}
+.logo img{
+    height: 35px;
+    width: 35px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(211, 211, 211);
+}
+.user{
+    display: flex;
+    gap: 20px;
+    
+}
+.user-logo{
+    line-height: 48.6px;
+}
+.user-logo a:hover{
+    color: rgb(255, 255, 255);
+}
+.user-logo:hover .tools{
+    cursor: pointer;
+    display: block;
+}
+.tools{
+    position: absolute;
+    right:  10px;
+    display: none;
+}
+.tools li{
+    background-color: white;
+    padding: 8px 16px;
+}
+.tools li:hover{
+    background-color: rgb(164, 164, 164);
+}
+.itemInCart{
+    position: absolute;
+    top: 15px;
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+    color: white;
+    line-height: 15px;
+    font-weight: 600;
+    right: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+.share{
+    display: flex;
+    margin-left: 60px;
+    gap: 140px;
+    margin-top: 30px;
+}
+.iconInternet{
+    display: flex;
+    gap: 5px;
+}
+#heart{
+    color: red;
+}
+.heart{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+}
+.text{
+    display: inline-flex;
+    padding-left: 50px;
+    margin-top: 30px;
+    gap: 10px;
+}
+.include{
+    width: 1200px;
+    height: 700px;
+    background-color: azure;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.image{
+    margin-top: 110px;
+    margin-left: 50px;
+}
+.write{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.evaluate{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
 .price{
     display: flex;
     align-items: center;

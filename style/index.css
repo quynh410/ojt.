@@ -130,6 +130,8 @@ button{
     border-radius: 5px;
 }
 .itemInCart{
-    margin-left: 100px;
-    
+    margin-left: 90px;
+    margin-left: -54px;
+    position: absolute;
+    margin-top: -15px;
 }

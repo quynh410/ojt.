@@ -26,14 +26,14 @@ let product1 = [
         id:4,
         name:"Balo BOO Unisex Large Logo Phối Túi Plastic",
         price:"100.000đ",
-        image: "https://down-vn.img.susercontent.com/file/sg-11134201-7rbkx-lo6mqbgxqfm2f6",
+        image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708",
         stock:"1,7k",
-    },
-    {
+      },
+      {
         id:5,
         name:"Chính Hãng】Son kem bóng/Son bóng SHAQINUO Siêu lì căng mọng môi không lem",
         price:"24.000đ",
-        image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708",
+        image: "https://down-vn.img.susercontent.com/file/sg-11134201-7rbkx-lo6mqbgxqfm2f6",
         stock:"8k",
     },
     {
@@ -73,10 +73,10 @@ function renderProduct() {
     for (let i = 0; i < product.length; i++){
         element += 
                     `
+              
                 <div class="item">
-                    <a href=""
-                      ><img
-                        src="${product[i].image}"
+                     <a href="./detail.html?id=${product[i].id}"
+                      ><img src="${product[i].image}" onclick="chooseImage(${product[i].id})"
                         alt=""
                     /></a>
                     <br />
@@ -85,7 +85,7 @@ function renderProduct() {
                     >
                     <br /><br />
                     <br />
-                    <span style="color: #ee4d2d">${product[i].price}</span>
+                    <span style="color: #ee4d2d">${product[i].price}đ</span>
                     <span style="margin-left: 250px; color: grey">Đã bán ${product[i].stock}</span>
                 </div>
                     `
@@ -167,3 +167,15 @@ if (scan == true) {
   userName.innerHTML = name1
   userName.style.display = "block"
 }else userName.style.display ="none"
+
+//function chọn từng ảnh
+function chooseImage(quynh){
+  console.log(111111,quynh);
+  localStorage.setItem("idProduct",quynh);
+
+}
+
+function purchase() {
+  
+}
+
