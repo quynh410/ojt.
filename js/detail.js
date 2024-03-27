@@ -88,3 +88,45 @@ function addToCart(productId) {
 
     }
 }
+
+//////////
+function showQuantityCart() {
+    let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
+    let users = JSON.parse(localStorage.getItem("users"));
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].id == checkLogin) {
+        document.getElementsByClassName("itemInCart")[0].innerHTML = users[i].cart.length;
+      }
+    }
+  }
+  showQuantityCart();
+  let scan = false
+  function checkLogin(){
+    let users = JSON.parse(localStorage.getItem("users"));
+    let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].id == checkLogin) {
+        scan =  true
+        console.log(scan);
+  
+      }
+    }
+    if(scan == true){
+      console.log(scan);
+      document.getElementById("login").style.display = "none"
+      document.getElementById("register").style.display = "none"
+    
+    }
+    
+    
+  }
+  
+  checkLogin()
+  
+  let userName = document.getElementById("user")
+  let name1 = JSON.parse(localStorage.getItem("lastName"))
+  console.log(name1);
+  if (scan == true) {
+    userName.innerHTML = name1
+    userName.style.display = "block"
+  }else userName.style.display ="none"

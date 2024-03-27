@@ -21,17 +21,24 @@
         </div>
         <br /><br />
         <div class="text">
-          <a href="./admin.product.html">
-            <div class="button">
-              <i class="fa-brands fa-product-hunt"></i>
-              <b>quản lí product</b>
-            </div>
-          </a>
-          <br /><br />
           <a href="./admin.user.html">
             <div class="button">
               <i class="fa-regular fa-user"></i>
               <b>quản lí user </b>
+            </div>
+          </a>
+          <br><br>
+          <a href="./admin.category.html">
+            <div class="button">
+              <i class="fa-solid fa-list"></i>
+              <b>quản lí danh mục</b>
+            </div>
+          </a>
+          <br /><br />
+          <a href="./admin.product.html">
+            <div class="button">
+              <i class="fa-brands fa-product-hunt"></i>
+              <b>quản lí product</b>
             </div>
           </a>
           <br />
@@ -41,6 +48,13 @@
               <i class="fa-solid fa-money-bill"></i>
               <b> quản lí bill</b>
             </div>
+          </a>
+          <br><br>
+          <a href="./admin.logout.html">
+            <div class="button">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <b>logout </b>
+            </div> 
           </a>
         </div>
       </div>
@@ -68,8 +82,8 @@
             style="width: 400px; height: 30px"
           />
           <select name="" id="" style=" width: 100px; height: 30px">
-            <option value="">tác vụ</option>
-            <option value="">1</option>
+            <option value="">Tên</option>
+            <option value="">STT</option>
           </select>
         </div>
         <br><br>
@@ -82,6 +96,7 @@
             <th>số lượng</th>
             <th>tác vụ</th>
           </tr>
+          <tbody id="tbody">   
           <tr>
             <td>1</td>
             <td>🔥 Giá Sốc 🔥 Dép đi trong nhà xixitiao mềm nhẹ giá rẻ dễ đi phong
@@ -91,7 +106,7 @@
               alt=""
           /></td>
           <td>32.000đ</td>
-          <td>298</td>
+          <td>3200</td>
           <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
           </tr>
           <tr>
@@ -103,7 +118,7 @@
               alt=""
           /></td>
           <td>70.000đ</td>
-          <td>3020</td>
+          <td>15000</td>
           <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
           </tr>
           <tr>
@@ -114,7 +129,7 @@
                 alt=""
             /></td>
             <td>18.000đ</td>
-            <td>343</td>
+            <td>27000</td>
             <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
             </tr>
             <tr>
@@ -126,12 +141,36 @@
                   alt=""
               /> </td>
               <td>24.800đ</td>
-              <td>2345</td>
+              <td>1700</td>
               <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
               </tr>
+              <tr>
+                <td>5</td>
+                  <td>Balo BOO Unisex Large Logo Phối Túi Plastic</td>
+                  <td><img
+                    src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln6rl33xfar708"
+                    alt=""
+                /> </td>
+                <td>100,000đ</td>
+                <td>8000</td>
+                <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                    <td>🔥 Giá Sốc 🔥 Áo khoá nỉ mũ hai lớp LASA SUSO nỉ lót bông form
+                      rộng</td>
+                    <td><img
+                      src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo91wvlvo22zf6"
+                      alt=""
+                  /> </td>
+                  <td>59,000đ</td>
+                  <td>1500</td>
+                  <td><i class="fa-solid fa-arrow-up-from-bracket"></i>   <i class="fa-solid fa-xmark"></i></td>
+                  </tr>
+                </tbody>
         </table>
       </div>
       <div>
-  
+  <script src="../js/admin.product.js"></script>
   </body>
 </html>

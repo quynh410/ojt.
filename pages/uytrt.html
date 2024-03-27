@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thêm sản phẩm</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<h2>Quản lý sản phẩm</h2>
+
+<button onclick="themSanPham()">Thêm sản phẩm</button>
+
+<table id="bangSanPham">
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+    </tr>
+</table>
+
+<script>
+    function themSanPham() {
+        var tenSanPham = prompt("Nhập tên sản phẩm:");
+        var giaSanPham = prompt("Nhập giá sản phẩm:");
+
+        if (tenSanPham !== null && giaSanPham !== null) {
+            var table = document.getElementById("bangSanPham");
+            var newRow = table.insertRow(-1);
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            cell1.innerHTML = tenSanPham;
+            cell2.innerHTML = giaSanPham;
+        }
+    }
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm sản phẩm</title>
+  </head>
+  <style>
+    /* Định dạng modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Định dạng nội dung của modal */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* Định dạng nút đóng modal */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    input {
+      margin-left: 20px;
+    }
+  </style>
+  <body>
+    <button id="openModal">Thêm sản phẩm</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Thêm Sản phẩm</h2>
+        <label for="">Tên</label>
+
+        <input type="text" />
+        <br /><br />
+        <label for="">Ảnh</label>
+        <input type="image" />
+        <br /><br />
+        <label for="">Giá</label>
+        <input type="text" />
+        <br /><br />
+        <label for="">Số lượng</label>
+        <input type="text" />
+      </div>
+    </div>
+
+    <script>
+      // Lấy phần tử modal
+      var modal = document.getElementById("myModal");
+
+      // Lấy nút mở modal
+      var btn = document.getElementById("openModal");
+
+      // Lấy phần tử đóng modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // Khi người dùng nhấp vào nút, mở modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // Khi người dùng nhấp vào nút đóng, đóng modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Khi người dùng nhấp vào bất kỳ đâu ngoài modal, đóng modal
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
