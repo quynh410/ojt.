@@ -71,7 +71,7 @@
         <button style="width: 100px; height: 30px">
             <i class="fa-solid fa-arrow-left"></i><a href="./index.html">Quay lại </a>
           </button>
-          <button class="btn" id="openModal">Thêm sản phẩm</button>
+          <button class="btn" id="openModal">Thêm danh mục</button>
 <!-- ----------- -->
           <div id="myModal" class="modal">
             <div class="modal-content">
@@ -79,26 +79,11 @@
               <h2>Thêm Sản phẩm</h2>
               <br><br>
               <label for=""  style="margin-left: -10px;">Tên :</label>
-              <input type="text" style="margin-left: 70px;"/>z
-              <br /><br />
-              <label for=""  style="margin-left: -10px;" >Giá :</label>
               <input type="text" style="margin-left: 70px;"/>
               <br /><br />
-              <label for="" style="margin-left: -10px;">Số lượng :</label>
-              <input type="text" style="margin-left: 30px;"/>
-              <br><br>
-              <label for="">Danh mục</label>
-              <select name="" id="">
-                <option value="">Thời trang</option>
-                <option value="">Danh mục</option>
-                <option value="">Đồ dùng</option>
-              </select>
-              <br><br>
 
-              <label for="" style="margin-left: 20px;">Ảnh</label>
-              <input type="file" />
               <br><br>
-               <button style="width: 350px; height: 40px; color: orangered;" onclick="addProduct">Xác nhận</button>
+               <button style="width: 350px; height: 40px; color: orangered;" onclick="addProduct()">Xác nhận</button>
             </div>
           </div>
 <!-- ----------- -->
@@ -106,7 +91,7 @@
 
           <br /><br />
           <br><br>
-          <table border="1">
+          <table border="1" id="productBoard">
             <tr>
                 <th>STT</th>
                 <th>ID</th>
