@@ -15,43 +15,122 @@ btn.onclick = function () {
 // Khi người dùng nhấp vào nút đóng, đóng modal
 span.onclick = function () {
   modal.style.display = "none";
+  document.getElementById("title-form").innerHTML = "Thêm";
+  document.getElementById('inp').value = "";
+
+  document.getElementById('btnSubmitUpdate').style.display = "none";
+  document.getElementById('btnSubmitAdd').style.display = "inline-block";
 };
 
 // Khi người dùng nhấp vào bất kỳ đâu ngoài modal, đóng modal
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    // document.getElementById("inp").value = "";
   }
 };
 
 
-// Biến global để lưu trữ số lượng danh mục đã thêm
-var categoryIdCounter = 0;
+// Lấy trạng thái hiện tại của danh sách từ localStorage
+let categoryList = JSON.parse(localStorage.getItem("category")) || [];
 
-// Hàm tạo ID tự động
-function generateCategoryId() {
-  categoryIdCounter++; // Tăng biến đếm
-  return categoryIdCounter; // Trả về ID mới
+// Lấy thẻ input và nút lưu lại từ HTML
+let inputName = document.querySelector('.inp');
+let saveButton = document.querySelector('.butn');
+
+saveButton.addEventListener('click', function() {
+  // Lấy giá trị từ trường input
+  let categoryName = inputName.value;
+
+  // Kiểm tra nếu tên danh mục đã được nhập
+  if (categoryName.trim() !== '') {
+      // Tạo một đối tượng danh mục mới
+      let category = {
+          categoryId: Math.floor(Math.random() * 10000000),
+          name: categoryName
+      };
+
+      // Thêm đối tượng danh mục vào danh sách
+      categoryList.push(category);
+      localStorage.setItem("category", JSON.stringify(categoryList));
+
+      renderCategory();
+
+      alert("Danh mục đã được lưu lại!");
+      // Reset giá trị trường input
+      inputName.value = '';
+  } else {
+      alert("Vui lòng nhập tên danh mục!");
+  }
+});
+
+// fucntion render danh mục sản phẩm
+function renderCategory() {
+    const category = JSON.parse(localStorage.getItem("category")) || [];
+    let html = "";
+    for (let i=0; i< category.length; i++){
+        html += `
+        <tr>  
+        
+              <td>${i + 1}</td>
+              <td>${category[i].categoryId}</td>
+              <td>${category[i].name}</td>
+              <td>
+                <button onclick="editCategory(${i})">Sửa</button>
+                <button onclick="deleteCategory(${i})">Xóa</button>
+              </td>
+          </tr>
+        `
+    }
+    document.getElementById("tbody").innerHTML = html;
+}
+renderCategory();
+
+
+
+
+// Hàm sửa danh mục
+function editCategory(index) {
+  // Lấy thông tin danh mục cần sửa
+  let category = categoryList[index];
+
+  // Hiển thị modal thông tin danh mục hiện tại
+  modal.style.display = "block";
+  document.getElementById('btnSubmitUpdate').style.display = "inline-block";
+  document.getElementById('btnSubmitAdd').style.display = "none";
+  document.getElementById('title-form').innerHTML = "Sửa";
+  inputName.value = category.name;
+
+  // Xử lý việc sửa danh mục khi người dùng xác nhận
+  document.getElementById('btnSubmitUpdate').onclick = function () {
+    let newName = inputName.value.trim();
+    if (newName !== '') {
+      categoryList[index].name = newName;
+      localStorage.setItem("category", JSON.stringify(categoryList));
+
+      renderCategory();
+
+      // alert("Danh mục đã được cập nhật!");
+      modal.style.display = "none"; 
+    } else {
+      alert("Vui lòng nhập tên danh mục!");
+    }
+  };
 }
 
-// Hàm thêm danh mục
-function addProduct() {
-  // Lấy giá trị nhập vào từ input
-  var categoryName = document.querySelector("input[type='text']").value;
+// Hàm xóa danh mục
+function deleteCategory(index) {
+  // Xác nhận với người dùng trước khi xóa
+  if (confirm("Bạn có chắc chắn muốn xóa danh mục này không?")) {
+    // Xóa danh mục khỏi mảng categoryList
+    categoryList.splice(index, 1);
+    localStorage.setItem("category", JSON.stringify(categoryList));
 
-  // Tạo một hàng mới trong bảng
-  var table = document.getElementById("productBoard");
-  var row = table.insertRow(-1); // Chèn vào cuối bảng
+    // Render lại danh sách danh mục
+    renderCategory();
 
-  // Tạo các ô trong hàng mới
-  var cell1 = row.insertCell(0); // Ô STT
-  var cell2 = row.insertCell(1); // Ô ID
-  var cell3 = row.insertCell(2); // Ô Tên danh mục
-  var cell4 = row.insertCell(3); // Ô Tác vụ
-
-  // Đặt nội dung cho các ô
-  cell1.innerHTML = table.rows.length - 1; // STT
-  cell2.innerHTML = generateCategoryId(); 
-  cell3.innerHTML = categoryName; // Tên danh mục nhập từ người dùng
-  cell4.innerHTML = "<button>Sửa</button> <button>Xóa</button>"; // Nút Sửa và Xóa
+    alert("Danh mục đã được xóa!");
+  }
 }
+
+

@@ -71,22 +71,23 @@
         <button style="width: 100px; height: 30px">
             <i class="fa-solid fa-arrow-left"></i><a href="./index.html">Quay lại </a>
           </button>
-          <button class="btn" id="openModal">Thêm danh mục</button>
-<!-- ----------- -->
+          <button class="btn" id="openModal"> Thêm danh mục</button>
+<!-- ------------------ -->
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
-              <h2>Thêm Sản phẩm</h2>
+              <h2><span id="title-form">Thêm</span> Sản phẩm</h2>
               <br><br>
-              <label for=""  style="margin-left: -10px;">Tên :</label>
-              <input type="text" style="margin-left: 70px;"/>
+              <label for=""  style="margin-left: -10px;" class="pro">Tên :</label>
+              <input type="text" style="margin-left: 70px;" class="inp" id="inp" />
               <br /><br />
 
               <br><br>
-               <button style="width: 350px; height: 40px; color: orangered;" onclick="addProduct()">Xác nhận</button>
+               <button style="width: 350px; height: 40px; color: orangered;" id="btnSubmitAdd" class="butn">Xác nhận thêm</button>
+               <button style="width: 350px; height: 40px; color: orangered; display: none;" id="btnSubmitUpdate">Xác nhận sửa</button>
             </div>
           </div>
-<!-- ----------- -->
+<!-- ------------------- -->
 
 
           <br /><br />
@@ -98,15 +99,8 @@
                 <th>Tên danh mục</th>
                 <th>Tác vụ</th>
             </tr>
-            <tr>
-            <td>1</td>
-                <td>12</td>
-                <td>Quần</td>
-                <td>
-                    <button>Sửa</button>
-                    <button>Xóa</button>
-                </td>
-            </tr>
+            <tbody id="tbody">
+            </tbody>
           </table>
       </div>
       <script src="../js/admin.category.js"></script>
